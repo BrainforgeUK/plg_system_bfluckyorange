@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.5" method="upgrade" group="system">
+	<name>System - Lucky Orange Plugin by BrainforgeUK</name>
+	<creationDate>July 2020</creationDate>
+	<version>1.0.0</version>
+	<author>Jonathan Brain</author>
+	<authorEmail>brainforge.uk@btinternet.com</authorEmail>
+	<authorUrl>https://www.brainforge.co.uk</authorUrl>
+	<copyright>Copyright (C) 2020 Jonathan Brain - All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PLG_SYSTEM_BFLUCKYORANGE_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="bfluckyorange">bfluckyorange.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<config>
+		<fields
+				name="params"
+				>
+			<fieldset
+					name="basic">
+				<field
+						name="siteid"
+						type="text"
+						required="false"
+						label="PLG_SYSTEM_BFLUCKYORANGE_SITEID_LABEL"
+						description="PLG_SYSTEM_BFLUCKYORANGE_SITEID_DESC"
+						hint="0000000"
+						class="input-small"
+				/>
+				<field
+						name="trackusers"
+						type="radio"
+						default="0"
+						label="PLG_SYSTEM_BFLUCKYORANGE_TRACKUSERS_LABEL"
+						class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="PLG_SYSTEM_BFLUCKYORANGE">
+			https://brainforge.co.uk/component/bfupdater?element=plg_system_luckyorange.xml
+		</server>
+	</updateservers>
+</extension>
