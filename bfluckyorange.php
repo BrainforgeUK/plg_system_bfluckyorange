@@ -7,9 +7,7 @@
  */
 
 use Joomla\CMS\Factory;
-use Joomla\CMS\Helper\UserGroupsHelper;
 use Joomla\CMS\Plugin\CMSPlugin;
-use Joomla\CMS\User\UserHelper;
 
 defined('_JEXEC') or die('Restricted access');
 
