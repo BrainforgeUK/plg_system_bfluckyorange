@@ -43,7 +43,7 @@ class plgSystemBfluckyorange extends CMSPlugin
 		$wjs = '"https://d10lpsik1i8c69.cloudfront.net/w.js"';
 
 		$js = '
-window.__lo_site_id = "' . trim($this->params->get('siteid')) . '"
+window.__lo_site_id = "' . trim($this->params->get('siteid')) . '";
 
 (function() {
     var wa = document.createElement("script");
