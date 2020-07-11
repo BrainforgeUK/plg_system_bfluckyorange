@@ -7,7 +7,9 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Helper\UserGroupsHelper;
 use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\User\UserHelper;
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -28,12 +30,10 @@ class plgSystemBfluckyorange extends CMSPlugin
 			return;
 		}
 
-		if (!$this->params->get('trackusers'))
+		$user = Factory::getUser();
+		if ($user->get('isRoot'))
 		{
-			$user = Factory::getUser();
-			if (!empty($user->id)) {
-				return;
-			}
+			return;
 		}
 
 		/*

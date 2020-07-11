@@ -25,22 +25,12 @@
 				<field
 						name="siteid"
 						type="text"
-						required="false"
+						required="true"
 						label="PLG_SYSTEM_BFLUCKYORANGE_SITEID_LABEL"
 						description="PLG_SYSTEM_BFLUCKYORANGE_SITEID_DESC"
 						hint="0000000"
 						class="input-small"
 				/>
-				<field
-						name="trackusers"
-						type="radio"
-						default="0"
-						label="PLG_SYSTEM_BFLUCKYORANGE_TRACKUSERS_LABEL"
-						class="btn-group btn-group-yesno"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
 			</fieldset>
 		</fields>
 	</config>
